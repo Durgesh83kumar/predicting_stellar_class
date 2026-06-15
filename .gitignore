@@ -1,0 +1,11 @@
+venv/
+data/
+models/
+submissions/
+catboost_info/
+
+__pycache__/
+.ipynb_checkpoints/
+
+*.cbm
+*.csv
