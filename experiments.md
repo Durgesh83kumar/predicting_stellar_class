@@ -57,5 +57,21 @@ learning_rate=0.05
 CV Score:
 0.95047
 
-Improvement over V2:
-+0.00068
+LB Score:
+0.95153
+
+Improvement:
++0.00100
+
+# V4 - Extended Color Indices
+
+Added:
+u_r
+g_i
+r_z
+
+CV Score:
+0.95106
+
+LB Score:
+0.95211
