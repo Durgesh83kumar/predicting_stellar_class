@@ -75,3 +75,40 @@ CV Score:
 
 LB Score:
 0.95211
+
+# V5
+
+Removed:
+- spectral_type
+- galaxy_population
+
+Features:
+- alpha
+- delta
+- u
+- g
+- r
+- i
+- z
+- redshift
+- u_g
+- g_r
+- r_i
+- i_z
+- u_r
+- g_i
+- r_z
+
+Model:
+CatBoost
+iterations=1000
+depth=8
+learning_rate=0.05
+
+CV Score:
+0.95120
+
+LB Score:
+0.95233
+
+Best Model So Far
