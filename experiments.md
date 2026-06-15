@@ -39,3 +39,23 @@ LB Score:
 
 Improvement:
 +0.00274
+
+# V3 - Feature Engineering
+
+New Features:
+u_g = u - g
+g_r = g - r
+r_i = r - i
+i_z = i - z
+
+Model:
+CatBoost
+iterations=1000
+depth=8
+learning_rate=0.05
+
+CV Score:
+0.95047
+
+Improvement over V2:
++0.00068
