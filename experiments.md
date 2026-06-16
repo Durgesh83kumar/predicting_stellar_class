@@ -152,3 +152,26 @@ LB Score:
 0.95545
 
 Best Model So Far
+
+# V7
+
+Model: LightGBM
+
+Feature Importance Findings:
+- alpha, delta, redshift dominate
+- engineered color indices are highly useful
+- no obviously removable features
+
+Params:
+n_estimators=1500
+learning_rate=0.03
+
+CV:
+0.95532
+
+LB:
+0.95524
+
+Result:
+CV improved but LB worsened.
+Rejected.
