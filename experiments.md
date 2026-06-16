@@ -175,3 +175,30 @@ LB:
 Result:
 CV improved but LB worsened.
 Rejected.
+
+# V8
+Model: XGBoost
+
+CV: 0.95496
+
+LB: 0.95511
+
+CV improved than V6 - LightGBM but LB worsened
+Rejected.
+
+
+# V8 - Ensemble V1
+
+Models:
+- LightGBM V6 (0.95545)
+- XGBoost V1 (0.95511)
+- CatBoost V5 (0.95233)
+
+Method:
+Majority Voting
+
+LB Score: 0.95538
+
+Result:
+Did not beat LightGBM V6 (0.95545)
+Rejected.
