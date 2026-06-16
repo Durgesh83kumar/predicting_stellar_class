@@ -112,3 +112,43 @@ LB Score:
 0.95233
 
 Best Model So Far
+
+
+# V6 - LightGBM
+
+Features:
+- alpha
+- delta
+- u
+- g
+- r
+- i
+- z
+- redshift
+- u_g
+- g_r
+- r_i
+- i_z
+- u_r
+- g_i
+- r_z
+
+Removed:
+- spectral_type
+- galaxy_population
+
+Model:
+LightGBM
+
+Parameters:
+n_estimators=1000
+learning_rate=0.05
+max_depth=8
+
+CV Score:
+0.95433
+
+LB Score:
+0.95545
+
+Best Model So Far
