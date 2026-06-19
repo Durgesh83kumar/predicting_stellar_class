@@ -187,7 +187,7 @@ CV improved than V6 - LightGBM but LB worsened
 Rejected.
 
 
-# V8 - Ensemble V1
+# V9 - Ensemble V1
 
 Models:
 - LightGBM V6 (0.95545)
@@ -202,3 +202,50 @@ LB Score: 0.95538
 Result:
 Did not beat LightGBM V6 (0.95545)
 Rejected.
+
+## V10 - LightGBM V3
+
+Changes:
+- Added ratio features:
+  - u_over_g
+  - g_over_r
+  - r_over_i
+  - i_over_z
+- Added interaction features:
+  - redshift_u
+  - redshift_g
+  - redshift_r
+
+CV:
+0.95459
+
+LB:
+0.95531
+
+Rejected
+
+
+# V11 LightGBM + Optuna V1
+
+Model:
+- LightGBM
+
+Hyperparameter Tuning:
+- Optuna (30 trials)
+
+Best CV:
+0.956625
+
+Public LB:
+0.95745
+
+Best Parameters:
+- learning_rate: 0.043945
+- max_depth: 11
+- num_leaves: 103
+- feature_fraction: 0.651807
+- bagging_fraction: 0.708441
+- min_child_samples: 11
+
+Outcome:
+Best model so far.
